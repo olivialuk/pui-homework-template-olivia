@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: `http://127.0.0.1:5500/solution-hw1/index.html`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/olivialuk/pui-homework-template-olivia`
