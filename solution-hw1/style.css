@@ -1,0 +1,54 @@
+.bold{
+    font-weight: bold;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+#underlined{
+    text-decoration: underline;
+}
+
+.border{
+    border-style: solid;
+    color: black;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    text-align: center; 
+}
+
+ /*
+main{
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    text-align: center; 
+    
+}
+*/
+
+main {
+    display: block; 
+    text-align: center; 
+    margin-right: 400px;
+    margin-left: 400px; 
+}
+
+
+footer{
+    display: block;
+    text-align: center; 
+}
+
+.product:hover {
+    background:yellow;
+}
+
+button{
+    background-color:yellow
+}
