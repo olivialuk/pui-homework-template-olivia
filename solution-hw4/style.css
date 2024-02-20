@@ -1,0 +1,192 @@
+/* LAYOUT */
+/* Header */
+
+header{
+    display: flex;
+}
+
+#headertext{
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px; 
+}
+
+nav{
+    margin-top: 40px;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.navlink{
+    margin-right: 50px ; 
+}
+
+/* Main */
+main{
+    margin-left: 120px;
+    margin-right: 120px; 
+    margin-top: 100px
+}
+
+main.productgallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    row-gap: 30px; 
+}
+
+main.detail{
+    display:flex;
+}
+
+#detailtext{
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.addToCart{
+    display: flex; 
+    justify-content: center; 
+}
+
+main.cart{
+    margin-left: 400px; 
+}
+
+.cartitem{
+    display:flex; 
+    align-content: stretch; 
+}
+
+#price{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around; 
+}
+
+#info{
+    flex-grow: 1; 
+    padding-left: 30px; 
+}
+
+.cartbottom{
+    display:flex; 
+    flex-direction:row; 
+    justify-content: space-between; 
+}
+
+.checkout{
+    text-align: right;
+}
+
+/* SPECIFIC STYLES */
+
+.product:hover {
+    background:yellow;
+}
+
+a, p, h1{
+    font-family: sans-serif;
+}
+
+p{
+    font-size:large; 
+}
+
+h1{
+    font-weight: 400; 
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black; 
+}
+
+#highlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+sup{
+    color: white; 
+    background-color: red;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 20px; 
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+#underlined{
+    text-decoration: underline;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+img{
+    width: 285px;
+}
+
+img.detail{
+    width: 600px;
+    border-style: solid;
+    color: black;
+    border-width: medium; 
+}
+
+img.cart{
+    width: 200px; 
+}
+
+img.logo{
+    width: 400px; 
+}
+
+.border{
+    border-style: solid;
+    color: black;
+    border-width: medium; 
+}
+
+button{
+    background-color:yellow;
+    font-size:medium; 
+    font-weight: bold; 
+    padding: 15px 20px; 
+}
+
+.cartbutton{
+    background-color:yellow;
+    font-size:medium; 
+    font-weight: bold; 
+    padding: 10px 40px; 
+    margin-left: 10px; 
+}
+
+select{
+    font-size:medium; 
+    width: 300px; 
+    padding: 5px 5px; 
+}
+
+hr{
+    height: 3px; 
+    background-color: black; 
+}
