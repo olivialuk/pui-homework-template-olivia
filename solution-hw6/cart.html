@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/rollData.js"></script> 
+    <script defer src="js/cart.js"></script> 
+    <script defer src="js/detail.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+          <img src="assets/logo/logo-01.svg" class="logo">
+        </div>
+        <div id="headertext">
+          <nav>
+            <div id="menu">
+              <a href="index.html" class="navlink">PRODUCTS</a>
+              <span class="navlink"> <a href="cart.html" class="bold" id="highlight">CART</a> <sup> 2 </sup></span>
+            </div>
+          </nav>
+          <div>
+            <hr>
+          </div>
+          <div class="left">
+            <h1>Shopping Cart</h1>
+          </div>
+        </div>
+      </header> 
+
+    <main class="cart">
+
+      <template class="fullCartItem">
+        <div class="cartitem">
+            <div id="image">
+                <img src="assets/products/original-cinnamon-roll.jpg" class="cart"/>
+            </div>
+            <div id="info">
+                <p id="name">Original Cinnamon Roll</p>
+                <p id="glazing">Glazing: Keep Original</p>
+                <p id="packsize">Pack Size: 1</p>
+            </div>
+            <div id="price">
+                <p id="priceText">$2.49</p>
+            </div>
+        </div>
+        <p class="removeLink">Remove</p>
+      </template>
+
+      <div id=target1>
+      </div>
+        <!--
+        <div class="cartitem">
+            <div id="image">
+                <img src="assets/products/double-chocolate-cinnamon-roll.jpg" class="cart"/>
+            </div>
+            <div id="info">
+                <p>Double Chocolate Cinnamon Roll</p>
+                <p>Glazing: Sugar Milk</p>
+                <p>Pack Size: 6</p>
+            </div>
+            <div id="price">
+                <p id="price">$27.45</p>
+            </div>
+        </div>
+
+        <p class="bold" id="underlined">Remove</p>
+
+        -->
+
+        <!-- final price & checkout -->
+      <hr>
+
+        <div class="cartbottom">
+            <div>
+              <p></p>
+            </div>
+            <p class="bold" id="total"> Total: </p>
+            <div class="checkout">
+                <p id="totalPrice"> $29.94 </p>
+                <button class="right">Checkout</button>
+            </div> 
+        </div>
+    </main> 
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="js/rollData.js"></script>
+    <script defer src="js/detail.js"></script> 
+    <script defer src="js/cart.js"></script> 
+  </head>
+  
+  <body>
+    <header>
+      <div id="logo">
+        <img src="assets/logo/logo-01.svg" class="logo">
+      </div>
+      <div id="headertext">
+        <nav>
+          <div id="menu">
+            <a href="index.html" class="navlink" id="highlight" >PRODUCTS</a>
+            <a href="cart.html" class="navlink">CART<sup>2</sup></a>
+          </div>
+        </nav>
+        <div>
+          <hr>
+        </div>
+        <div class="left">
+          <h1>Our hand-made cinnamon rolls</h1>
+        </div>
+      </div>
+    </header> 
+
+    <main class="detail">
+      <div>
+        <img id="detailimg" src="assets/products/original-cinnamon-roll.jpg" class="detail"/>
+      </div>
+
+      <div id="detailtext">
+        <div>
+          <p>Custonmize our delicious, hand-making cinnamons to you liking!<p></p>
+        </div>
+
+        <div>
+          <p>Glazing</p>
+          <select id="glazing" onchange="glazingChange(this.value)">
+          </select>
+
+          <p>Pack size: </p>
+          <select id="packsize" onchange="packSizeChange(this.value)">
+          </select>
+        </div>
+
+        <div class="addToCart">
+          <p class="bold">$</p>
+          <p class="bold" id="detailPrice">2.49</p>
+          <button class="cartbutton" onclick="saveProductInfo()">Add to cart</button>
+        </div>
+      </div>
+
+    </main>
+
+  </body>
+</html>
