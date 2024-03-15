@@ -33,8 +33,6 @@ class Roll {
 }
 const cart = [];
 
-let cartNum = 0; 
-
 //new rolls
 let original = new Roll("Original", "Sugar milk", 1, 2.49);  
 let walnut = new Roll("Walnut", "Vanilla milk", 12, 3.49); 
@@ -132,19 +130,20 @@ function saveToLocalStorage(){
 
 function retrieveFromLocalStorage(){
     const cartJSON = localStorage.getItem('cart'); 
-    const cart = JSON.parse(cartJSON); 
+    const cartArr = JSON.parse(cartJSON); 
 
-    for (const item of cart){
+    for (const item of cartArr){
         const roll = new Roll(item.type, item.glazing, item.size, item.basePrice); 
         cart.push(roll); 
-        cartNum = cartNum + 1
-        addToCart(roll)
+        addToCart(roll); 
     }
+    
 
 }
 
+
 if (localStorage.getItem('cart') != null){
-    retrieveFromLocalStorage();
+   retrieveFromLocalStorage();
 }
 
 

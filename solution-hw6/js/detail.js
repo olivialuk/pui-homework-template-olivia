@@ -17,7 +17,7 @@ let currentGlazePrice = 0;
 let currentPackSize = 1; 
 let calculatedPrice = 0; 
 
-/*
+
 const allGlazes = {
     'Keep original': 0.00,
     'Sugar milk': 0.00, 
@@ -31,7 +31,7 @@ const allPackSizes = {
     '6' : 5, 
     '12' : 10
 }
-*/
+
 
 let glazingSelectElement = document.querySelector('#glazing'); 
 let packSizeSelectElement = document.querySelector('#packsize'); 
@@ -69,6 +69,8 @@ function displayPrice(){
     calculatePrice(); 
     document.querySelector('#detailPrice').innerHTML = calculatedPrice; 
 }
+
+const cart = [];
 
 //HW04...
 
